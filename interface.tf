@@ -31,6 +31,11 @@ variable "map_public_ip_on_launch" {
   type        = bool
 }
 
+variable "region" {
+  type    = string
+  default = "us-west-2"
+}
+
 output "public_subnet_id" {
   value = aws_subnet.public.id
 }
